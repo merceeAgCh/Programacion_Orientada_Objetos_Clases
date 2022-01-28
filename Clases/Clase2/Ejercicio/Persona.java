@@ -3,7 +3,6 @@ ToDo
 Hacer un programa que calcule el imc y grasa corporal de una persona.
 Clase 2 Fecha 27-01-2022
 */
-//import java.util.Scanner;
 public class Persona{
 	//atributos
 	private double imc;
@@ -11,15 +10,9 @@ public class Persona{
 
 	//metodo principal
 	public static void main(String... args){
-
-		 // Scanner read = new Scanner(System.in);
-		  		//objeto 1
+		//objeto 1
 		Persona calculoIMC = new Persona();
 		double resimc = calculoIMC.obtenerIMC(70, 1.65);
-		/*System.out.println("Ingrese su peso: " + peso);
-		//peso = teclado.nextDouble();
-		System.out.println("Ingrese su estatura: " + estatura);
-		//estatura = teclado.nextDouble();*/
 		System.out.println("El imc es: " + resimc);
 		//objeto 2
 		Persona calculoGC = new Persona();
@@ -34,7 +27,7 @@ public class Persona{
 	//metodo para calculo de la grasa corporal
 	public double obtenerGC(int edad, String sexo){
 		if(sexo == "hombre"){
-				gc=1.2*imc+0.23*edad-10.8*1-5.4;
+			gc=1.2*imc+0.23*edad-10.8*1-5.4;
 			return gc;
 		}else{
 			gc=1.2*imc+0.23*edad-10.8*0-5.4;
