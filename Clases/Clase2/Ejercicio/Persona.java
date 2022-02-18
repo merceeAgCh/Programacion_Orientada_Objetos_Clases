@@ -16,7 +16,7 @@ public class Persona{
 		System.out.println("El imc es: " + resimc);
 		//objeto 2
 		Persona calculoGC = new Persona();
-		double resgc = calculoGC.obtenerGC(26, "mujer");
+		double resgc = calculoGC.obtenerGC(26, null);
 		System.out.println("Su grassa corporal es: " + resgc);
 	}
 	//Metodo para calculo de imc
@@ -26,7 +26,7 @@ public class Persona{
 	}
 	//metodo para calculo de la grasa corporal
 	public double obtenerGC(int edad, String sexo){
-		if(sexo == "hombre"){
+		if("hombre".equals(sexo)){
 			gc=1.2*imc+0.23*edad-10.8*1-5.4;
 			return gc;
 		}else{

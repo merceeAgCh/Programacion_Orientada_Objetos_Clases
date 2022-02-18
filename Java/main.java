@@ -39,10 +39,10 @@ class Alumno{
 		return "Nombre del alumno: "+ name + "\nCarrera:" + carrera + "\nMatricula: " + matricula
 		+ "\nGrupo: " + grupo + "\nTurno: " + turno;
 	}
-	private static String name;
-	private static String carrera;
-	private static int matricula;
-	private static String grupo;
-	private static String turno;
+	private String name;
+	private String carrera;
+	private int matricula;
+	private String grupo;
+	private String turno;
 }
 }
