@@ -12,6 +12,9 @@ public class Herencia{
 class Abuelito{
 	protected String colorOjos;
 	protected double altura;
+	protected void cantar(){
+		System.out.println("El abuelito está cantando");
+	}
 }
 
 class Madre extends Abuelito{
@@ -26,6 +29,7 @@ class Hija extends Madre{
 	public void describirHerencia(){
 		System.out.println("La altura es: " + altura);
 		bailar();
+		cantar();
 	}
 	
 }
