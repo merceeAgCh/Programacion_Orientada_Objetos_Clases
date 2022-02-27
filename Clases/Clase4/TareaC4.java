@@ -1,1 +1,0 @@
-//Crear 4 clases, la clase primera heredara, debe representar todo lo de herencia
