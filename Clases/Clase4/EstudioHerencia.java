@@ -8,8 +8,8 @@ public class EstudioHerencia{
 
 	//Aqui se encuentra el metodo main.
 	public static void main(String... args) {
-		Artista charlie = new Artista();
-		charlie.mostrarHerencia();
+		Estudio miestudio = new Estudio();
+		miestudio.mostrarHerencia();
 	}
 }
 
