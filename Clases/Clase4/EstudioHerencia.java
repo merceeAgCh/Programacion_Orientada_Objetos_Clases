@@ -18,10 +18,10 @@ class Guitarra{
 	protected String tipoGuitarra = "Acustica";
 	protected String color = "Natural";
 }
-
+//por jerarquia este debe ser la ultima clase hijo
 class Fabricante extends Guitarra{
-	protected String marcaGuitarra = "Epiphone";
-	protected int cantidadFabricadas;
+	private String marcaGuitarra = "Epiphone";
+	private int cantidadFabricadas;
 	//metodo
 	protected void venderGuitarra(){
 		System.out.println("Se han vendido guitarras");
@@ -29,8 +29,9 @@ class Fabricante extends Guitarra{
 }
 
 class Artista extends Guitarra{
+	protected String nombre = "Guns n Roses";
 	//metodos de la clase Artista
-	public void cantar(){
+	protected void cantar(String cancion){
 		System.out.println("Estas cantando.");
 	}
 	public void tocarGuitarra(){
@@ -39,6 +40,7 @@ class Artista extends Guitarra{
 }	
 
 class Estudio extends Artista{
+	//private String nombre = "Slash";
 	//metodos de la clase Estudio
 	void grabarVoz(){
 		System.out.println("Se grabo con exito la voz");
@@ -46,10 +48,13 @@ class Estudio extends Artista{
 	void grabarGuitarra(){
 		System.out.println("La guitarra se ha grabado.");
 	}
+	public void cantar(String cancion){
+		System.out.println("Estas cantando desde el estudio " + nombre); //sobre-escritura de metodos
+	}
 	public void mostrarHerencia(){
 		System.out.println("El tipo de guitarra es: " + tipoGuitarra);
 		System.out.println("El color de la guitarra es: " + color);
-		cantar();
+		cantar("Aca entre nos");
 		tocarGuitarra();
 		grabarGuitarra();
 		grabarVoz();
