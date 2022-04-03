@@ -139,7 +139,3 @@
 	  }
 	}	
 	```
-#### Caso de estudio.
-```
-Lineas telefonicas
-```
