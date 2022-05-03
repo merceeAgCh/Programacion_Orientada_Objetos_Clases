@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Programacion_Orientada_Objetos_Clases">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Triangulos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Carros.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
