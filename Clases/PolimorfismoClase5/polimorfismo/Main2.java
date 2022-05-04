@@ -1,6 +1,14 @@
 package polimorfismo;
+
+public class Main2 {
+    public static void main(String... args){
+        Animal perrito = new Perro("Xuxa", 9, 2);
+        perrito.realizarSonido();
+    }
+}
+
 //clase abstracta
-public abstract class Animal {
+abstract class Animal {
 
     //variables
     protected String nombre;
