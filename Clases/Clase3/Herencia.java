@@ -10,10 +10,12 @@ public class Herencia{
 
 //por cada archivo .java se permite una clase publica.
 class Abuelito{
+	//atributos
 	protected String colorOjos;
 	protected double altura;
+	//metodo
 	protected void cantar(){
-		System.out.println("El abuelito está cantando");
+		System.out.println("El abuelito esta cantando");
 	}
 }
 
