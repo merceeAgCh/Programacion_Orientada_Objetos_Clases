@@ -23,6 +23,10 @@ class Madre extends Abuelito{
 	protected void bailar(){
 		System.out.println("Me gusta bailar");
 	}
+	//metodo para so breescritura
+	protected void cantar(){
+		System.out.println("La madre esta cantando");
+	}
 }
 
 class Hija extends Madre{
